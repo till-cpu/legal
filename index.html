@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spearo — Legal</title>
+<meta name="description" content="Privacy Policy and Terms of Service for the Spearo spearfishing app.">
+<style>
+  :root {
+    --ink:#14202b; --ink-2:#41525f; --ink-3:#6d7f8b;
+    --ground:#ffffff; --panel:#f4f7f8; --rule:#d8e1e5; --accent:#c04426;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:#e7eef1; --ink-2:#adbcc5; --ink-3:#7c8f9a;
+      --ground:#0e1a22; --panel:#152530; --rule:#263946; --accent:#ff7a52;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:0 20px 100px;
+    background:var(--ground); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  main { max-width:36rem; margin:0 auto; }
+  header { padding:64px 0 28px; }
+  .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 10px; font-weight:600; }
+  h1 { font-size:2.2rem; line-height:1.1; letter-spacing:-.02em; margin:0 0 14px; }
+  p { color:var(--ink-2); margin:0 0 14px; }
+  .links { display:grid; gap:12px; margin-top:28px; }
+  .card {
+    display:block; text-decoration:none; padding:18px 20px;
+    background:var(--panel); border:1px solid var(--rule); border-radius:4px;
+  }
+  .card:hover { border-color:var(--accent); }
+  .card strong { display:block; color:var(--ink); font-size:1.05rem; margin-bottom:3px; }
+  .card span { color:var(--ink-3); font-size:14px; }
+  footer { margin-top:44px; padding-top:20px; border-top:1px solid var(--rule);
+    color:var(--ink-3); font-size:14px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Spearo</p>
+    <h1>Legal</h1>
+    <p>Spearo is a spearfishing app for logging dive spots and catches, and for reading sea conditions before you get in the water.</p>
+  </header>
+
+  <div class="links">
+    <a class="card" href="./privacy.html">
+      <strong>Privacy Policy</strong>
+      <span>What the app stores, who sees it, and how to delete it</span>
+    </a>
+    <a class="card" href="./terms.html">
+      <strong>Terms of Service</strong>
+      <span>Including what the app does and does not do for your safety</span>
+    </a>
+  </div>
+
+  <footer>
+    Contact: <a href="mailto:hello@spearo.app">hello@spearo.app</a>
+  </footer>
+</main>
+</body>
+</html>
