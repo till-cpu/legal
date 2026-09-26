@@ -60,7 +60,7 @@
 <header>
   <p class="eyebrow">Spearfish</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 2 September 2026</p>
+  <p class="updated">Last updated: 26 September 2026</p>
 </header>
 
 <p>Spearfish is a spearfishing app: it records your dive spots, your catches and your dives, and shows you sea conditions. This policy explains what it stores, where it goes, and how to get rid of it.</p>
@@ -69,7 +69,7 @@
 <h2>The short version</h2>
 <div class="short">
 <ul>
-  <li>Spearfish has <strong>no analytics, no advertising, no trackers and no third-party SDKs</strong>. Nothing is collected to profile you or sold to anyone.</li>
+  <li>Spearfish has <strong>no analytics, no advertising and no trackers</strong>. Nothing is collected to profile you or sold to anyone.</li>
   <li>Your spots are <strong>private by default</strong> and are never shown to other users unless you deliberately make one public or share it.</li>
   <li>Your data lives in a Supabase database hosted in <strong>Seoul, South Korea</strong>.</li>
   <li>You can <strong>delete your account and everything in it from inside the app</strong>, at any time, without asking anyone.</li>
@@ -83,6 +83,7 @@
 <p><strong>Your catches</strong> — species, weight, length, depth, date, your notes, and a photo if you add one.</p>
 <p><strong>Your dives</strong> — start and end time, the return time you set, the buddy you selected, the gear you chose, and — only if you turn on track recording — a position roughly once a minute while the app is open.</p>
 <p><strong>Your messages and buddies</strong> — buddy requests, groups you belong to, and the messages you send. Messages are stored so they can be delivered and re-read.</p>
+<p><strong>Your devices</strong> — if you allow notifications, a push token for each phone you sign in on. It is an address for delivering alerts, such as a buddy’s dive running overdue, and is used for nothing else. It is removed when you sign out on that phone, and a phone that has not opened Spearfish for 60 days is forgotten.</p>
 
 <h2>Location</h2>
 <p>Spearfish asks for location for three things:</p>
@@ -110,6 +111,8 @@
   <tr><td>Supabase (Seoul)</td><td>Everything above — they host the database, files and sign-in</td><td>To run the app</td></tr>
   <tr><td>Google</td><td>Your email and name, only if you use Google sign-in</td><td>To sign you in</td></tr>
   <tr><td>Open-Meteo</td><td>Coordinates rounded to ~1.1 km</td><td>Sea and weather forecasts</td></tr>
+  <tr><td>Expo</td><td>Your push token and the text of each alert</td><td>To deliver notifications</td></tr>
+  <tr><td>Google (Firebase Cloud Messaging)</td><td>Your push token and the text of each alert, on Android</td><td>Android delivers every app’s notifications through it</td></tr>
   <tr><td>ArcGIS, EMODnet, OpenSeaMap, CARTO</td><td>The map area you are viewing</td><td>To draw the map</td></tr>
 </table>
 </div>
@@ -125,7 +128,7 @@
 <p>Your data is kept until you delete it. Deleting your account removes everything immediately and permanently.</p>
 
 <h2>Deleting your account</h2>
-<p>In the app: <strong>Me → Delete account</strong>. It asks twice, then removes your profile, spots, catches, photos, dives, tracks, gear, buddy connections, group memberships and messages. This cannot be undone and we cannot recover it for you afterwards.</p>
+<p>In the app: <strong>Me → Delete account</strong>. It asks twice, then removes your profile, spots, catches, photos, dives, tracks, gear, buddy connections, group memberships, messages and notification registrations. This cannot be undone and we cannot recover it for you afterwards.</p>
 
 <h2>Children</h2>
 <p>Spearfish is not directed at children and is not intended for anyone under 16.</p>
