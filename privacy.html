@@ -60,7 +60,7 @@
 <header>
   <p class="eyebrow">Spearfish</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 27 September 2026</p>
+  <p class="updated">Last updated: 30 September 2026</p>
 </header>
 
 <p>Spearfish is a spearfishing app: it records your dive spots, your catches and your dives, and shows you sea conditions. This policy explains what it stores, where it goes, and how to get rid of it.</p>
@@ -76,6 +76,9 @@
 </ul>
 </div>
 
+<h2>Who is responsible for your data</h2>
+<p>Spearfish is made by <strong>Till Louesse</strong>, an individual developer based in the <strong>United Arab Emirates</strong>. He decides what Spearfish does with your data and is responsible for it — in the language of data protection law, the <em>controller</em>. The address to write to is at the bottom of this page.</p>
+
 <h2>What Spearfish stores</h2>
 <p><strong>Your account</strong> — email address, a username, and a password. The password is hashed by our authentication provider and is never visible to us. If you sign in with Google instead, we receive your email address and name from Google; we never see your Google password.</p>
 <p><strong>Your profile</strong> — optional. A display name, a photo, your region, diving certifications, and Instagram or YouTube handles if you choose to add them.</p>
@@ -87,9 +90,10 @@
 <p><strong>Your devices</strong> — if you allow notifications, a push token for each phone you sign in on. It is an address for delivering alerts, such as a buddy’s dive running overdue, and is used for nothing else. It is removed when you sign out on that phone, and a phone that has not opened Spearfish for 60 days is forgotten.</p>
 
 <h2>Location</h2>
-<p>Spearfish asks for location for three things:</p>
+<p>Spearfish asks for location for four things:</p>
 <ul>
   <li><strong>Sea conditions</strong> — to show swell, wind and tide where you are. Your coordinates are <strong>rounded to about 1.1 km</strong> before being sent to the forecast provider, so the request never carries your precise position.</li>
+  <li><strong>Showing you on the chart</strong> — your position centres the map and is drawn on it, on your phone. It is not stored or sent; the map providers listed below only see which area of the map is on your screen.</li>
   <li><strong>Recording a dive track</strong> — only when you switch it on for a dive.</li>
   <li><strong>Putting a catch on the buddies map</strong> — only if you tick that box for a specific catch. Coordinates are <strong>rounded to about 1.1 km on your device before they are stored</strong>, so the exact spot never leaves your phone.</li>
 </ul>
@@ -99,7 +103,7 @@
 <p><strong>Other Spearfish users</strong> see only what you deliberately share:</p>
 <ul>
   <li>catches you submit to the leaderboard (your name, the species and the weight)</li>
-  <li>catches you tick onto the buddies map (coarse location only, to accepted buddies only)</li>
+  <li>catches you tick onto the buddies map, with their photo (coarse location only, to accepted buddies only)</li>
   <li>spots you switch to public, or share with a specific buddy</li>
   <li>messages you send, to their recipients</li>
   <li>if a dive runs overdue, the buddy you chose for it: your name, how late you are, and your last recorded position</li>
@@ -115,16 +119,26 @@
   <tr><td>Open-Meteo</td><td>Coordinates rounded to ~1.1 km</td><td>Sea and weather forecasts</td></tr>
   <tr><td>Expo</td><td>Your push token and the text of each alert</td><td>To deliver notifications</td></tr>
   <tr><td>Google (Firebase Cloud Messaging)</td><td>Your push token and the text of each alert, on Android</td><td>Android delivers every app’s notifications through it</td></tr>
-  <tr><td>ArcGIS, EMODnet, OpenSeaMap, CARTO</td><td>The map area you are viewing</td><td>To draw the map</td></tr>
+  <tr><td>Esri (ArcGIS), OpenFreeMap, OpenSeaMap, NOAA</td><td>The map area you are viewing</td><td>To draw the map and its depths</td></tr>
 </table>
 </div>
 <p>Nothing is sold, rented or shared for advertising. There is no advertising in Spearfish.</p>
 
-<h2>A note about photos</h2>
+<h2>Photos</h2>
+<p><strong>Catch photos are private.</strong> Only you can open them — plus your accepted buddies, for a catch you choose to show on the buddies map, and only while it stays there. The app fetches each photo with your own sign-in, so a copied link opens nothing on its own.</p>
 <div class="note">
-<p>Catch photos and profile pictures are stored in <strong>public storage buckets</strong>. That means anyone who has the direct file link can open the image, even without a Spearfish account. Links are long and not guessable, and the app never publishes them outside the app — but they are not access-controlled.</p>
-<p>Please bear that in mind before uploading anything you would not want seen.</p>
+<p><strong>Profile pictures are different.</strong> Other users see yours, and it is stored at a public link: anyone who has that direct link can open the image, even without a Spearfish account. The link is long and not guessable, and the app never publishes it outside the app.</p>
 </div>
+
+<h2>Why Spearfish is allowed to use it</h2>
+<ul>
+  <li><strong>To give you the app you signed up for</strong> — your account, spots, catches, dives, messages, and the buddy alerts you set up. Without this data there is no logbook to keep.</li>
+  <li><strong>Because you said yes</strong> — location, camera, photos and notifications are each asked for by your phone, and you can take any of them back in its settings. The same goes for everything you choose to share: a public spot, a leaderboard entry, a catch on the buddies map.</li>
+  <li><strong>To keep the service safe</strong> — for example, looking into a report that someone is misusing it.</li>
+</ul>
+
+<h2>Where it is stored</h2>
+<p>On Supabase’s servers in Seoul, South Korea. The European Commission and the United Kingdom both recognise South Korea as protecting personal data to their own standard, so moving your data there needs no further safeguard under their law.</p>
 
 <h2>How long it is kept</h2>
 <p>Your data is kept until you delete it. Deleting your account removes everything immediately and permanently.</p>
@@ -137,6 +151,7 @@
 
 <h2>Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct, export or erase your data, or to object to its processing. Most of this is available directly in the app; for anything else, write to the address below and we will respond.</p>
+<p>If you are in the European Union or the United Kingdom and think your data has been mishandled, you can complain to your country’s data protection authority. Writing to us first is usually the quicker way to get it put right.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes materially, the app will say so before the change takes effect. The date at the top always reflects the current version.</p>
